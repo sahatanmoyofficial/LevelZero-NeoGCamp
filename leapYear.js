@@ -12,7 +12,7 @@ console.log("")
 
 var askDOB = "Please input your date of birth in the following format(dd/mm/yyyy): "
 var userDOB = readlineSync.question(chalk.blue(askDOB))
-//var validDate = "Please enter a valid date."
+var invalidDate = chalk.redBright("Please enter a valid date and not POTATO!!!")
 var leapYear = " is a leap year"
 var notALeapYear = " is not a leap year"
 var start = "The year you have entered"
@@ -21,14 +21,22 @@ var leapYearCheckFlag = false
 
 
 function checkValidDate(parameterOne) {
-
-    if ((0 == parameterOne % 4) && (0 != parameterOne % 100) || (0 == parameterOne % 400)) {
-        console.log(chalk.yellow(start + leapYear));
-    } else {
-        console.log(chalk.cyan(start + notALeapYear));
+  if (parameterOne.toLowerCase() == "potato")
+  { 
+  console.log(invalidDate)
+  }
+    else if ((0 == (parameterOne.substring(6,10) % 4)) && (0 != (parameterOne.substring(6,10) % 100)) || (0 == (parameterOne.substring(6,10) % 400))) {
+      console.log(chalk.yellow(start + leapYear))
     }
+      
+    else {
+        console.log(chalk.cyan(start + notALeapYear))
+      }
+
+
 }
 
-    
-checkValidDate(userDOB.substring(6,10))
+
+checkValidDate(userDOB)
+//checkValidDate(userDOB.substring(6,10))
 
