@@ -1,4 +1,4 @@
-//markOne = https://replit.com/@sahatanmoy663/LevelZeoClassOne?embed=1&output=1
+//markOne = https://replit.com/@sahatanmoy663/markOne#index.js
 
 var readLinesync = require('readline-sync')
 
