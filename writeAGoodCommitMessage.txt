@@ -1,0 +1,14 @@
+What would you put as a commit message if:
+
+1. You added some details to the README.md file?
+2. Your CLI app was taking "potato" as an input for leap year test?
+3. You started using CHALK library in your CLI app?
+4. You added level based game play in your CLI app?
+5. You renamed your variables from var a to var questions?
+
+Answers:
+1. docs: added details in README
+2. fix: validating input
+3. style: added CHALK for styling
+4. feat: added level-based gameplay
+5. refactor: changed variable name
